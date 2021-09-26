@@ -12,7 +12,7 @@ public interface DepartmentDao {
     void add(Department department);
     void addDepartmentToUser(Department department, user user);
 
-    //read
+    //read method
     List<Department> getAll();
     List<user> getAllUsersByDepartment(int departmentid);
 
@@ -20,10 +20,10 @@ public interface DepartmentDao {
     Department findById(int id);
     // List<user> getAllusersForADepartment(int departmentid);
 
-    //update
+    //update method
     void update(int id, String name, String about, String website, String email);
 
-    //delete
+    //delete method
     void deleteById(int id);
     void clearAll();
 }
