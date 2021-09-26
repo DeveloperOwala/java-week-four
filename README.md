@@ -68,7 +68,7 @@ A user visiting the news portal Api site will be able to:
 ## Contact Information
 ~ For any inquiries or future git collaborative projects, reach out to:
 
-Email: <a href="mailto:shemnyatti@gmail.com">shemnyatti@gmail.com</a>
+Email: <a href="mailto:shemnyatti@gmail.com">otienoerick46@gmail.com</a>
 
 ## LICENSE
 Copyright 2020 Erick Otieno Okumu
