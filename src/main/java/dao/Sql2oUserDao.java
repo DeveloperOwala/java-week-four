@@ -8,7 +8,7 @@ import org.sql2o.Sql2oException;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// db for userdao
 public class Sql2oUserDao implements UserDao {
     private final Sql2o sql2o;
 
