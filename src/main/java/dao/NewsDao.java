@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface NewsDao {
 
-    //create
+    //create method
     void add(News news);
 
     //read
