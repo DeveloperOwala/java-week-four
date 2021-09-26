@@ -1,5 +1,5 @@
 package model;
-
+// creating a class for department
 import java.util.Objects;
 
 public class Department {
