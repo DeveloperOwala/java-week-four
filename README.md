@@ -1,7 +1,7 @@
 # NEWS-PORTAL API
 
 ## Author
-* Shem Brooklyne Mwangi
+* Erick Otieno OKumu
 
 ### Description
 This is an Organizational Rest API that queries and retrieves scoped news and information within an organization.
