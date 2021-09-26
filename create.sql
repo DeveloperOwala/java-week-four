@@ -1,6 +1,7 @@
 CREATE DATABASE newsportal;
+// db connection
 \c newsportal;
-CREATE TABLE departments (
+CREATE TABLE departments(
  id SERIAL PRIMARY KEY,
  name VARCHAR,
  about VARCHAR,

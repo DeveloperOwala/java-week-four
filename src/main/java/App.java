@@ -92,8 +92,6 @@ public class App {
             }
         });
 
-
-
         get("/departments/:id/users", "application/json", (req, res) -> {
             int departmentid = Integer.parseInt(req.params("id"));
             Department departmentToFind = DepartmentDao.findById(departmentid);
@@ -123,7 +121,7 @@ public class App {
                 return gson.toJson(userDao.getAlldepartmentsForAuser(UserId));
             }
         });
-        get("/departments/:id/sortedNews", "application/json", (req, res) -> { //// TODO: 1/18/18 generalize this route so that it can be used to return either sorted news or unsorted ones.
+        get("/departments/:id/sortedNews", "application/json", (req, res) -> { ////
             int departmentid = Integer.parseInt(req.params("id"));
             Department departmentToFind = DepartmentDao.findById(departmentid);
             List<News> allNews;
