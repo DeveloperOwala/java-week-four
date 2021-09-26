@@ -11,7 +11,6 @@ import java.util.List;
 // class for db connection
 public class Sql2oDepartmentDao implements DepartmentDao {
 
-
     private final Sql2o sql2o;
     public Sql2oDepartmentDao(Sql2o sql2o) { this.sql2o = sql2o; }
 
@@ -83,8 +82,6 @@ public class Sql2oDepartmentDao implements DepartmentDao {
         }
         return users;
     }
-
-
     @Override
     public void update(int id, String name, String about, String website, String email){
         String sql = "UPDATE departments SET (id,name, about, website, email)=(:id, :name, :about, :website, :email) WHERE id=:id";
@@ -97,8 +94,6 @@ public class Sql2oDepartmentDao implements DepartmentDao {
                     .executeUpdate();
         }
     }
-
-
     @Override
     public void deleteById(int id) {
         String sql = "DELETE from departments WHERE id=:id";
