@@ -8,7 +8,7 @@ import org.sql2o.Sql2oException;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// class for db connection
 public class Sql2oDepartmentDao implements DepartmentDao {
 
 
