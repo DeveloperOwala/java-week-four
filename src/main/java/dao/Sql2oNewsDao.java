@@ -6,7 +6,7 @@ import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
 import java.util.List;
-
+//db dao for news
 
 public class Sql2oNewsDao implements NewsDao {
 
