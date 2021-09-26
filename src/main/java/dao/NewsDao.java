@@ -5,8 +5,8 @@ import model.News;
 import java.util.List;
 
 public interface NewsDao {
-
-    //create method
+//CRUD methods
+    //create
     void add(News news);
 
     //read
