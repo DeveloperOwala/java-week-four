@@ -127,22 +127,6 @@ public class App {
                 return gson.toJson(userDao.getAlldepartmentsForAuser(UserId));
             }
         });
-
-//        get("/departments/:id/news", "application/json", (req, res) -> {
-//            int departmentid = Integer.parseInt(req.params("id"));
-//
-//            Department DepartmentToFind = DepartmentDao.findById(departmentid);
-//            List<News> allNews;
-//
-//            if (DepartmentToFind == null){
-//                throw new ApiException(404, String.format("No Department with the id: \"%s\" exists", req.params("id")));
-//            }
-//
-//            allNews = NewsDao.getAllNewsByDepartment(departmentid);
-//
-//            return gson.toJson(allNews);
-//        });
-
         get("/departments/:id/sortedNews", "application/json", (req, res) -> { //// TODO: 1/18/18 generalize this route so that it can be used to return either sorted news or unsorted ones.
             int departmentid = Integer.parseInt(req.params("id"));
             Department departmentToFind = DepartmentDao.findById(departmentid);
@@ -163,16 +147,6 @@ public class App {
             res.status(201);
             return gson.toJson(department);
         });
-
-//        post("/departments/:departmentid/news/new", "application/json", (req, res) -> {
-//            int departmentid = Integer.parseInt(req.params("departmentid"));
-//            News News = gson.fromJson(req.body(), News.class);
-//
-//            News.setdepartmentid(departmentid); //we need to set this separately because it comes from our route, not our JSON input.
-//            NewsDao.add(News);
-//            res.status(201);
-//            return gson.toJson(News);
-//        });
 
 
         post("/departments/:departmentid/news/new", "application/json", (req, res) -> {
