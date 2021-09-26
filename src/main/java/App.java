@@ -37,15 +37,9 @@ public class App {
         Sql2oNewsDao NewsDao;
         Connection conn;
         Gson gson = new Gson();
-                     //h2 DB
-//        String connectionString = "jdbc:h2:~/newsportal.db;INIT=RUNSCRIPT from 'classpath:DB/create.sql'";
-//        Sql2o sql2o = new Sql2o(connectionString, "", "");
 
-
-//        String connectionString = "jdbc:postgresql://ec2-204-236-228-169.compute-1.amazonaws.com:5432/d2gbuioks1j7sv"; //!
-//        Sql2o sql2o = new Sql2o(connectionString, "hjfgyjguaxciit", "ab84930a6217bbb75e971a6c1639efc2bff76d985dac6a24aefd16920d82155c"); //!
-        String connectionString = "jdbc:postgresql://localhost:5432/jadle_test"; //!
-        Sql2o sql2o = new Sql2o(connectionString, "ynerfmixymuwoe", null); //!
+        String connectionString = "jdbc:postgresql://ec2-52-72-125-94.compute-1.amazonaws.com:5432/df9vns165h6t71"; //!
+        Sql2o sql2o = new Sql2o(connectionString, "ynerfmixymuwoe", "6f408cf2b09b12e4819af2d81fabe1231b4716e08efa4aa2acedac34d18f7bce"); //!
 
         DepartmentDao = new Sql2oDepartmentDao(sql2o);
         userDao = new Sql2oUserDao(sql2o);
